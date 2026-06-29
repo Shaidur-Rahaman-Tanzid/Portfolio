@@ -284,6 +284,11 @@ button:focus {
     padding: 9px 15px 8px;
 }
 
+.site-header .navigation .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+}
+
 .site-header #navbar {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -2478,6 +2483,11 @@ color: #fff;
 }
 .footer-image {
     margin-bottom: 20px;
+}
+
+.footer-image img {
+    max-height: 50px;
+    width: auto;
 }
 .footer-menu ul li:hover a{
   color:#fff;

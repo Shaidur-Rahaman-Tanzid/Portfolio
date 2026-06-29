@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Gallery_1 from '../Assets/Images/gallery/img-1.jpg';
-import Gallery_2 from '../Assets/Images/gallery/img-2.jpg';
-import Gallery_3 from '../Assets/Images/gallery/img-3.jpg';
-import Gallery_4 from '../Assets/Images/gallery/img-4.jpg';
-import Gallery_5 from '../Assets/Images/gallery/img-5.jpg';
-import Gallery_6 from '../Assets/Images/gallery/img-6.jpg';
+import Ba_1 from '../Assets/Images/gallery/ba1.png';
+import Ba_2 from '../Assets/Images/gallery/ba2.png';
+import Ba_3 from '../Assets/Images/gallery/ba3.png';
+import Crm_1 from '../Assets/Images/gallery/crm1.png';
+import Crm_2 from '../Assets/Images/gallery/crm2.png';
+import Crm_3 from '../Assets/Images/gallery/crm3.png';
+import Cp_1 from '../Assets/Images/gallery/cp1.png';
+import Cp_2 from '../Assets/Images/gallery/cp2.png';
+import Cp_3 from '../Assets/Images/gallery/cp3.png';
+import Ebs_1 from '../Assets/Images/gallery/ebs1.jpeg';
+import Ebs_2 from '../Assets/Images/gallery/ebs2.jpeg';
+import Commune_1 from '../Assets/Images/gallery/commune1.jpeg';
+import Commune_2 from '../Assets/Images/gallery/commune2.jpeg';
+import Reviewdibo_1 from '../Assets/Images/gallery/reviewdibo1.jpeg';
+import Reviewdibo_2 from '../Assets/Images/gallery/reviewdibo2.jpeg';
 
 class PortfolioDetails extends Component {
 
@@ -16,8 +25,8 @@ class PortfolioDetails extends Component {
     cards = [
         {
             id: 1,
-            image: Gallery_1,
-            gallery: [Gallery_1, Gallery_2, Gallery_6],
+            image: Ba_1,
+            gallery: [Ba_1, Ba_2, Ba_3],
             category: 'onWebApp',
             title: 'Ba Systems',
             description: 'A modern web application built with React, Laravel and Strapi',
@@ -31,8 +40,8 @@ class PortfolioDetails extends Component {
         },
         {
             id: 2,
-            image: Gallery_2,
-            gallery: [Gallery_2, Gallery_1, Gallery_6],
+            image: Crm_1,
+            gallery: [Crm_1, Crm_2, Crm_3],
             category: 'onWebApp',
             title: 'CRM System',
             description: 'Responsive web design for mobile and desktop',
@@ -46,8 +55,8 @@ class PortfolioDetails extends Component {
         },
         {
             id: 3,
-            image: Gallery_6,
-            gallery: [Gallery_6, Gallery_1, Gallery_2],
+            image: Cp_1,
+            gallery: [Cp_1, Cp_2, Cp_3],
             category: 'onWebApp',
             title: 'Channel Partner',
             description: 'Full-stack web application with database',
@@ -61,8 +70,8 @@ class PortfolioDetails extends Component {
         },
         {
             id: 4,
-            image: Gallery_5,
-            gallery: [Gallery_5, Gallery_3, Gallery_4],
+            image: Ebs_1,
+            gallery: [Ebs_1, Ebs_2],
             category: 'onMobileApp',
             title: 'EBS',
             description: 'A cross-platform employee business system mobile application for iOS and Android, designed to streamline attendance, communication, and daily work management.',
@@ -76,8 +85,8 @@ class PortfolioDetails extends Component {
         },
         {
             id: 5,
-            image: Gallery_3,
-            gallery: [Gallery_3, Gallery_4, Gallery_5],
+            image: Commune_1,
+            gallery: [Commune_1, Commune_2],
             category: 'onMobileApp',
             title: 'iCommune',
             description: 'A cross-platform community engagement mobile application designed for communication, events, and shared services.',
@@ -91,14 +100,14 @@ class PortfolioDetails extends Component {
         },
         {
             id: 6,
-            image: Gallery_4,
-            gallery: [Gallery_4, Gallery_5, Gallery_3],
+            image: Reviewdibo_1,
+            gallery: [Reviewdibo_1, Reviewdibo_2],
             category: 'onMobileApp',
-            title: 'Goal',
-            description: 'Native mobile application with features',
-            details: 'A social messaging application with real-time chat, voice/video calls, group chats, and media sharing. Includes user profiles and notification system.',
-            features: ['Leaderboards', 'Single Player Mode', 'Multiplayer Mode'],
-            technologies: ['Flutter', 'Flame',],
+            title: 'ReviewDibo',
+            description: 'A Flutter mobile application for iOS and Android that provides a platform for users to share reviews, ratings, and recommendations on various products and services.',
+            details: 'ReviewDibo is a user-friendly mobile application that allows users to share their opinions and experiences through reviews and ratings. The app features a clean interface for browsing and submitting reviews, a robust search functionality, and personalized recommendations based on user preferences. Built with Flutter for cross-platform compatibility, ReviewDibo offers a seamless experience for users looking to discover and share insights on products and services.',
+            features: ['Home', 'Reviews', 'Merchants', 'Search', 'User Profiles'],
+            technologies: ['Flutter', 'FastApi',],
             client: 'Myself',
             duration: '6 months',
             team: '1 developer',
@@ -140,7 +149,7 @@ class PortfolioDetails extends Component {
                     <div className="row" style={{ marginBottom: '60px' }}>
                         <div className="col col-xs-12">
                             <div style={{ position: 'relative', backgroundColor: '#202020', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-                                <img src={card.gallery[this.state.currentSlideIndex]} alt="Gallery" style={{ width: '100%', height: '500px', objectFit: 'cover', display: 'block' }} />
+                                <img src={card.gallery[this.state.currentSlideIndex]} alt="Gallery" style={{ width: '100%', height: '500px', objectFit: 'contain', display: 'block', backgroundColor: '#202020' }} />
 
                                 <button onClick={this.prevSlide} style={{ position: 'absolute', left: '20px', top: '50%', transform: 'translateY(-50%)', backgroundColor: '#aaa', border: 'none', padding: '10px 15px', borderRadius: '50%', cursor: 'pointer', fontSize: '20px', fontWeight: 'bold', zIndex: 10, color: 'white' }}>
                                     ❮
@@ -186,7 +195,8 @@ class PortfolioDetails extends Component {
                                 </div>
                                 <div>
                                     <a
-                                        href="#"
+                                        href="/"
+                                        onClick={(e) => e.preventDefault()}
                                         style={{
                                             display: 'inline-block',
                                             backgroundColor: '#888888',

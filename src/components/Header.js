@@ -1,11 +1,11 @@
 import React, { Component} from 'react';
-import Logo from '../Assets/Images/logo.png';
-import Home_1 from '../Assets/Images/home/img-1.jpg';
-import Home_2 from '../Assets/Images/home/img-6.jpg';
-import Home_3 from '../Assets/Images/home/img-4.jpg';
-import Home_4 from '../Assets/Images/home/img-5.jpg';
+import Logo from '../Assets/Images/logo.svg';
+import Home_1 from '../Assets/Images/drewer/Home.png';
+import Home_2 from '../Assets/Images/drewer/about_me.png';
+import Home_3 from '../Assets/Images/drewer/services.png';
+import Home_4 from '../Assets/Images/drewer/portfolio.png';
 import Home_5 from '../Assets/Images/home/img-2.jpg';
-import Home_6 from '../Assets/Images/home/img-3.jpg';
+import Home_6 from '../Assets/Images/drewer/contact.png';
 
 import {Link} from 'react-router-dom'
 

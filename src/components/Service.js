@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 
 import sr1 from '../Assets/Images/service/1.png'
 import sr2 from '../Assets/Images/service/2.png'
-import sr3 from '../Assets/Images/service/3.png'
 import sr4 from '../Assets/Images/service/4.png'
-import sr5 from '../Assets/Images/service/5.png'
-import sr6 from '../Assets/Images/service/6.png'
 
 
 class Service extends Component {

@@ -40,7 +40,7 @@ class Contact extends Component {
                     <div className="row">
                         <div className="col col-xs-12">
                             <div className="contact-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.8706896906027!2d88.9990543!3d24.4094116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc11714a398415:0x4b786d401795f55b!2sNatore!5e0!3m2!1sen!2sbd!4v1234567890123" width="100%" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe title="Google Maps Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.8706896906027!2d88.9990543!3d24.4094116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc11714a398415:0x4b786d401795f55b!2sNatore!5e0!3m2!1sen!2sbd!4v1234567890123" width="100%" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>

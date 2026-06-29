@@ -61,7 +61,7 @@ class Testimonial extends Component {
                                     <img src={testimonialImg_1} alt=""/>
                                 </div>
                                 <div className="testimonial-content">
-                                    <h4>Shakir Ahmed</h4>
+                                    <h4>Md Shakir Ahmed</h4>
                                     <span>Associate Software Engineer</span>
                                 </div>
                             </div>

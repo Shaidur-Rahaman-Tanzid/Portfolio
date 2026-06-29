@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Gallery_1 from '../Assets/Images/gallery/img-1.jpg';
-import Gallery_2 from '../Assets/Images/gallery/img-2.jpg';
-import Gallery_3 from '../Assets/Images/gallery/img-3.jpg';
-import Gallery_4 from '../Assets/Images/gallery/img-4.jpg';
-import Gallery_5 from '../Assets/Images/gallery/img-5.jpg';
-import Gallery_6 from '../Assets/Images/gallery/img-6.jpg';
+import Gallery_1 from '../Assets/Images/gallery/commune1.jpeg';
+import Gallery_3 from '../Assets/Images/gallery/ebs1.jpeg';
+import Gallery_4 from '../Assets/Images/gallery/reviewdibo1.jpeg';
+import Gallery_7 from '../Assets/Images/gallery/ba1.png';
+import Gallery_8 from '../Assets/Images/gallery/crm1.png';
+import Gallery_9 from '../Assets/Images/gallery/cp1.png';
+
+
 import {Link} from 'react-router-dom'
 
 class Porfolio extends Component {
@@ -15,12 +17,12 @@ class Porfolio extends Component {
     }
 
     cards = [
-        { id: 1, image: Gallery_1, category: 'onWebApp', title: 'Ba Systems', description: 'A modern web application built with React' },
-        { id: 2, image: Gallery_2, category: 'onWebApp', title: 'CRM', description: 'Responsive web design for mobile and desktop' },
-        { id: 3, image: Gallery_6, category: 'onWebApp', title: 'Channel Partner', description: 'Full-stack web application with database' },
-        { id: 4, image: Gallery_5, category: 'onMobileApp', title: 'EBS', description: 'iOS and Android mobile application' },
-        { id: 5, image: Gallery_3, category: 'onMobileApp', title: 'ICommune', description: 'Cross-platform mobile app development' },
-        { id: 6, image: Gallery_4, category: 'onMobileApp', title: 'Goal', description: 'Native mobile application with features' },
+        { id: 1, image: Gallery_7, category: 'onWebApp', title: 'Ba Systems', description: 'A modern web application built with React' },
+        { id: 2, image: Gallery_8, category: 'onWebApp', title: 'CRM', description: 'Responsive web design for mobile and desktop' },
+        { id: 3, image: Gallery_9, category: 'onWebApp', title: 'Channel Partner', description: 'Full-stack web application with database' },
+        { id: 4, image: Gallery_3, category: 'onMobileApp', title: 'EBS', description: 'iOS and Android mobile application' },
+        { id: 5, image: Gallery_1, category: 'onMobileApp', title: 'ICommune', description: 'Cross-platform mobile app development' },
+        { id: 6, image: Gallery_4, category: 'onMobileApp', title: 'ReviewDibo', description: 'Native mobile application with features' },
     ]
 
     render() {
@@ -62,16 +64,16 @@ class Porfolio extends Component {
                                     <h2>Work I Have Done</h2>
                                 </div>
                                 <ul>
-                                    <li><a href="#" className={this.state.onWebApp && this.state.onMobileApp ? "current active" : ""} onClick={allElement}>All</a></li>
-                                    <li><a href="#" className={this.state.onWebApp && !this.state.onMobileApp ? "current active" : ""} onClick={webApp}>Web Application</a></li>               
-                                    <li><a href="#" className={!this.state.onWebApp && this.state.onMobileApp ? "current active" : ""} onClick={mobileApp}>Mobile Application</a></li> 
+                                    <li><a href="/" className={this.state.onWebApp && this.state.onMobileApp ? "current active" : ""} onClick={allElement}>All</a></li>
+                                    <li><a href="/" className={this.state.onWebApp && !this.state.onMobileApp ? "current active" : ""} onClick={webApp}>Web Application</a></li>               
+                                    <li><a href="/" className={!this.state.onWebApp && this.state.onMobileApp ? "current active" : ""} onClick={mobileApp}>Mobile Application</a></li> 
                                 </ul>
                             </div>
                             <div className="gallery-container gallery-fancybox masonry-gallery payra-masonary">
                                
                                 {this.cards.map((card) => (
                                     <div key={card.id} className={this.state[card.category] ? "grid active" : "grid"}>
-                                        <img src={card.image} className="img img-responsive" alt={card.title} />
+                                        <img src={card.image} className="img img-responsive" alt={card.title} style={{ width: '100%', height: '100%', objectFit: 'cover', aspectRatio: '1 / 1' }} />
                                         <div className="icon">
                                             <Link to={`/portfolio/${card.id}`} state={{ card }} className="view-icon">
                                                 <i className="fa fa-plus" aria-hidden="true"></i>
